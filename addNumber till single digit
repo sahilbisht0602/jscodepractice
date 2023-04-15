@@ -1,0 +1,17 @@
+// 5+4+3+1 = 13 = 1 + 3 = 4
+
+function addData(num){
+    //convert num to array 
+    let stringNum = ""+num;
+    const arrNum = stringNum.split('').map((num)=>{
+        return parseInt(num)
+    })
+    const final = arr.reduce((num,acc)=>{
+        return acc+num   
+    })
+    if(final>=10) {
+        addData(final);
+    }else console.log(final)
+}
+
+addData(4987)
