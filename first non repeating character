@@ -1,0 +1,7 @@
+let str1 = 'abcab';
+for(let i = 0; i < str1.length; i++){
+    let j = str1.charAt(i);
+    if(str1.indexOf(j)===str1.lastIndexOf(j)){
+        console.log(j)
+    }
+}
